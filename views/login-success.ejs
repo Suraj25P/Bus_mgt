@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login-page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div id="blackbox">
+        <div id="bill">
+            <h1>Bus Management Office</h1>
+            <p id="r"><strong>Recpt-no:</strong>
+                <%=data.recptno%>
+
+            </p>
+            <p id="d"><strong>Date:</strong>
+                <%=d.getDate()%> /
+                <%=d.getMonth() + 1%> /
+                <%=d.getFullYear()%>
+            </p>
+            <p id="n"><strong>Name:</strong>
+                <span>
+                    <%=data.name%></span>
+            </p>
+            <p id="y"><strong>Year:</strong>
+                <%=data.year%>
+            </p>
+            <p id="b"><strong>Branch:</strong>
+                <%=data.branch%>
+            </p>
+            <p id="s"><strong>Stop:</strong>
+                <%=data.stop%>
+            </p>
+            <p id="f"><strong>Amount</strong>
+                <%=data.feespaid%>
+            </p>
+
+        </div>
+        <button>Print</button>
+        <button> <a href="home"> Menu</a></button>
+    </div>
+</body>
+
+</html>

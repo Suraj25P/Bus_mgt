@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <div id="retriveddatacontainer">
+        <h1>PROFILE</h1>
+        <table>
+            <tr>
+                <th>Recipt-no:</th>
+                <td>
+                    <%=data[0]._id%>
+                </td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td>
+                    <%=data[0].name%>
+                </td>
+            </tr>
+            <tr>
+                <th>Year:</th>
+                <td>
+                    <%=data[0].year%>
+                </td>
+            </tr>
+            <tr>
+                <th>Department:</th>
+                <td>
+                    <%=data[0].dept%>
+                </td>
+            </tr>
+            <tr>
+                <th>Stop:</th>
+                <td>
+                    <%=data[0].stop%>
+                </td>
+            </tr>
+            <tr>
+                <th>Bus-no:</th>
+                <td>
+                    <%=data[0].busno%>
+                </td>
+            </tr>
+            <div id="back"><a href="/home">Menu</a></div>
+            <div id="del"><a href="delete/<%=data[0]._id%>">delete</a></div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

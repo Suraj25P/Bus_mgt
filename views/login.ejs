@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../scripts/jquerry.js"></script>
+    <title>Login-page</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <h1>New Entry</h1>
+        <label for="recptno">Recipt-No:</label>
+        <input type="number" name="recptno" value=<%=data%> id="recptno" min="1000">
+
+        <label for="name">NAME:</label>
+        <input type="text" name="name" id="name" required>
+
+        <div class="year">
+            <label for="year">YEAR:</label>
+            <select name="year" id="year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+
+
+
+        <div class="dept">
+            <label for="branch">DEPT:</label>
+            <select name="branch" id="branch">
+                <option value="BTE">BTE</option>
+                <option value="CVE">CVE</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="ECE">ECE</option>
+                <option value="ISE">ISE</option>
+                <option value="ME">ME</option>
+            </select>
+        </div>
+
+
+        <label for="stop" class="stop">stop:</label>
+        <input type="text" name="stop" id="stop" required onblur="myfunction()">
+
+        <label for="busno">Bus-no:</label>
+        <input type="number" name="busno" id="busno" min="1">
+
+        <label for="feespaid">fees-paid:</label>
+        <input type="number" name="feespaid" step="500" id="feespaid" required>
+
+
+
+        <input type="submit" name="submit" value="SUBMIT" id="submit">
+
+
+    </form>
+    <script src="../scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div id="retrievebusdata">
+        <h1>Bus Data</h1>
+        <table>
+            <tr id="heading">
+                <td colspan="2">Busno:
+                    <%=bno%>
+                </td>
+            </tr>
+            <tr>
+                <th>Stop</th>
+                <th>Fees</th>
+            </tr>
+            <tr>
+                <td>
+                    <%=data[0].stop%>
+                </td>
+                <td>
+                    <%=data[0].fees%> rs</td>
+            </tr>
+            <tr>
+                <td>
+                    <%=data[1].stop%>
+                </td>
+                <td>
+                    <%=data[1].fees%> rs</td>
+            </tr>
+            <tr>
+                <td>
+                    <%=data[2].stop%>
+                </td>
+                <td>
+                    <%=data[2].fees%> rs</td>
+            </tr>
+            <tr>
+                <td>
+                    <%=data[3].stop%>
+                </td>
+                <td>
+                    <%=data[3].fees%> rs</td>
+            </tr>
+
+            <tr>
+                <td>Nitte</td>
+                <td>0 rs</td>
+            </tr>
+            <div id="back"><a href="/home">Menu</a></div>
+        </table>
+    </div>
+</body>
+
+</html>
